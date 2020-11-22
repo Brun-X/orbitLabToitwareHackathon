@@ -1,8 +1,5 @@
 // filename: tutorials/gyro.toit
-/// Wait for the "started" message in the log to move your device around.
-/// This program generates logs reporting the median of the accumulated g-force the device senses.
-/// The icon dispayed on the device changes when movement is detected.
-/// Check out all available icons at https://materialdesignicons.com/.
+/// Under MIT licence
 import device
 import peripherals show *
 import math
@@ -44,17 +41,17 @@ main:
           l2.off
           l3.off
           l4.off
-        else if force > 1.2 and force < 2.0:
+        else if force >= 1.2 and force < 2.0:
           l1.on
           l2.off
           l3.off
           l4.off
-        else if force > 2.0 and force < 3.0:
+        else if force >= 2.0 and force < 3.0:
           l1.on
           l2.on
           l3.off
           l4.off
-        else if force > 3.0 and force < 4.0:
+        else if force >= 3.0 and force < 4.0:
           l1.on
           l2.on
           l3.on

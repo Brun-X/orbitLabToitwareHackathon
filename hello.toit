@@ -1,3 +1,6 @@
+///Build from example code from the toiware team
+///Under MIT licence
+
 // filename: hello/hello.toit
 /// Prints a message on the e-Ink display of the device.
 import font show *
