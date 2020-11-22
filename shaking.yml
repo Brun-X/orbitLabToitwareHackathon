@@ -1,0 +1,7 @@
+name: Shake-a-thon
+entrypoint: shaking.toit
+triggers:
+  on_install: true
+  on_boot: true
+  on_movement:
+    shaken: true

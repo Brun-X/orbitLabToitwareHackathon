@@ -1,0 +1,5 @@
+name: HelloApp
+entrypoint: hello.toit
+triggers:
+  on_install: true
+  on_boot: true
